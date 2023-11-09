@@ -1,1 +1,16 @@
-INSERT INTO pelanggan VALUES(id_pelanggan, nama_pelanggan, alamat_pelanggan, email_pelanggan)
+INSERT INTO pelanggan (id_pelanggan, nama_pelanggan, alamat_pelanggan, email_pelanggan) VALUES
+(1001,"Ahmad Eko Budi", "Jl. Jambu No.20", "ahmadebud@gmail.com"),
+(1002,"Bagus Surya Ilham", "Jl. Apel No.13", "bagussuril@gmail.com"),
+(1003,"Cantika Dewi Martini", "Jl. Belimbing No.7", "cantikdm@gmail.com"),
+(1004,"Diyah Sri Mulyani", "Jl. Anggur No.9", "diyahsm@gmail.com"),
+(1005,"Endang Sujoko", "Jl. Jeruk No.3", "endangs@gmail.com"),
+(1006,"Fitriani Putri", "Jl. Manggis No.11", "fiputri@gmail.com"),
+(1007,"Gibran Saputra", "Jl. Melon No.21", "gibransap@gmail.com"),
+(1008,"Hilmi Farel Putra", "Jl. Semangka No.17", "hilmifp@gmail.com"),
+(1009,"Indah Permata Sari", "Jl. Salak No.8", "indahps@gmail.com"),
+(1010,"Joko Suroso", "Jl. Durian No.19", "jokoso@gmail.com"),
+(1011,"Kheni Hikmah Lestari", "Jl. Duku No.4", "khenihl@gmail.com"),
+(1012,"Laili Nur Bulan", "Jl. Rambutan No.22", "lailinurbul@gmail.com"),
+(1013,"Mohammad Tegar", "Jl. Pisang No.15", "mohtegar@gmail.com"),
+(1014,"Nanda Suryana", "Jl. Kelengkeng No.10", "nandasur@gmail.com"),
+(1015,"Okky Safitri", "Jl. Alpukat No.1", "okkysaf@gmail.com");
