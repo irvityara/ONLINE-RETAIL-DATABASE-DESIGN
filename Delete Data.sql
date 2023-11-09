@@ -1,0 +1,1 @@
+DELETE FROM pelanggan_beli_produk WHERE id="16";
