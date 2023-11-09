@@ -14,3 +14,21 @@ INSERT INTO pelanggan (id_pelanggan, nama_pelanggan, alamat_pelanggan, email_pel
 (1013,"Mohammad Tegar", "Jl. Pisang No.15", "mohtegar@gmail.com"),
 (1014,"Nanda Suryana", "Jl. Kelengkeng No.10", "nandasur@gmail.com"),
 (1015,"Okky Safitri", "Jl. Alpukat No.1", "okkysaf@gmail.com");
+
+INSERT INTO transaksi (no_transaksi, id_pelangganFK, tanggal_transaksi, jumlah_transaksi, jenis_transaksi) VALUES
+(901, 1015, "2023-11-01", 30000, "debit"),
+(902, 1013, "2023-11-01", 20000, "kredit"),
+(903, 1015, "2023-11-01", 40000, "debit"),
+(904, 1001, "2023-11-02", 50000, "kredit"),
+(905, 1004, "2023-11-02", 10000, "kredit"),
+(906, 1012, "2023-11-03", 100000, "kredit"),
+(907, 1009, "2023-11-03", 70000, "debit"),
+(908, 1008, "2023-11-03", 45000, "debit"),
+(909, 1001, "2023-11-04", 15000, "kredit"),
+(910, 1015, "2023-11-15", 100000, "kredit"),
+(911, 1011, "2023-11-16", 20000, "debit"),
+(912, 1005, "2023-11-06", 10000, "kredit"),
+(913, 1002, "2023-11-06", 15000, "debit"),
+(914, 1006, "2023-11-07", 35000, "debit"),
+(915, 1003, "2023-11-08", 50000, "kredit"),
+(916, 1010, "2023-11-09", 45000, "kredit");
