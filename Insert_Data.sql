@@ -1,3 +1,5 @@
+
+-- menambahkan data ke dalam table pelanggan
 INSERT INTO pelanggan (id_pelanggan, nama_pelanggan, alamat_pelanggan, email_pelanggan) VALUES
 (1001,"Ahmad Eko Budi", "Jl. Jambu No.20", "ahmadebud@gmail.com"),
 (1002,"Bagus Surya Ilham", "Jl. Apel No.13", "bagussuril@gmail.com"),
@@ -15,6 +17,8 @@ INSERT INTO pelanggan (id_pelanggan, nama_pelanggan, alamat_pelanggan, email_pel
 (1014,"Nanda Suryana", "Jl. Kelengkeng No.10", "nandasur@gmail.com"),
 (1015,"Okky Safitri", "Jl. Alpukat No.1", "okkysaf@gmail.com");
 
+
+-- menambahkan data ke dalam table transaksi
 INSERT INTO transaksi (no_transaksi, id_pelangganFK, tanggal_transaksi, jumlah_transaksi, jenis_transaksi) VALUES
 (901, 1015, "2023-10-26", 30000, "debit"),
 (902, 1013, "2023-10-26", 20000, "kredit"),
@@ -34,6 +38,7 @@ INSERT INTO transaksi (no_transaksi, id_pelangganFK, tanggal_transaksi, jumlah_t
 (916, 1010, "2023-11-09", 45000, "kredit");
 
 
+-- menambahkan data ke dalam table produk
 INSERT INTO produk (no_produk, nama_produk, kategori_produk, jumlah_produk, harga_produk) VALUES
 (201,"Buku Diary", "Stationery", 119, 10000),
 (202, "Tempat Pensil", "Stationery", 102, 10000),
@@ -53,6 +58,7 @@ INSERT INTO produk (no_produk, nama_produk, kategori_produk, jumlah_produk, harg
 (216, "Kipas Mini", "Elektronik", 11, 100000);
 
 
+-- menambahkan data ke dalam table pelanggan_beli_produk
 INSERT INTO pelanggan_beli_produk (id, id_pelangganFK, no_produkFK) VALUES
 (1, 1001, 204),
 (2, 1001, 212),

@@ -1,3 +1,4 @@
+-- membuat table pelanggan
 CREATE TABLE pelanggan(
     id_pelanggan INTEGER PRIMARY KEY NOT NULL,
     nama_pelanggan VARCHAR(45) NOT NULL,
@@ -5,6 +6,8 @@ CREATE TABLE pelanggan(
     email_pelanggan VARCHAR(20) NOT NULL
 );
 
+
+-- membuat table transaksi
 CREATE TABLE transaksi(
     no_transaksi INTEGER PRIMARY KEY NOT NULL,
     id_pelangganFK INTEGER REFERENCES pelanggan(id_pelanggan) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -13,6 +16,8 @@ CREATE TABLE transaksi(
     jenis_transaksi VARCHAR(20) NOT NULL
 );
 
+
+-- membuat table produk
 CREATE TABLE produk(
     no_produk INTEGER PRIMARY KEY NOT NULL,
     nama_produk VARCHAR(45) NOT NULL,
@@ -21,6 +26,8 @@ CREATE TABLE produk(
     harga_produk INTEGER NOT NULL
 );
 
+
+-- membuat table pelanggan_beli_produk
 CREATE TABLE pelanggan_beli_produk(
     id INTEGER PRIMARY KEY NOT NULL auto_increment,
     id_pelangganFK INTEGER REFERENCES pelanggan(id_pelanggan) ON DELETE CASCADE ON UPDATE CASCADE,
