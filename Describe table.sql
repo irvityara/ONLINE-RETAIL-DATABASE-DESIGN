@@ -1,5 +1,5 @@
-DESCRIBE pelanggan;
+DESC pelanggan;
 
-DESCRIBE produk;
+DESC produk;
 
-DESCRIBE transaksi;
+DESC transaksi;
