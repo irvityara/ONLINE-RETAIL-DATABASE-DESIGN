@@ -23,6 +23,6 @@ CREATE TABLE produk(
 
 CREATE TABLE pelanggan_beli_produk(
     id INTEGER PRIMARY KEY NOT NULL auto_increment,
-    FOREIGN KEY (id_pelangganFK) REFERENCES pelanggan(id_pelanggan),
-    FOREIGN KEY (no_produkFK) REFERENCES produk(no_produk),
+    id_pelangganFK INTEGER REFERENCES pelanggan(id_pelanggan) ON DELETE CASCADE ON UPDATE CASCADE,
+    no_produkFK INTEGER REFERENCES produk(no_produk) ON DELETE CASCADE ON UPDATE CASCADE
 );
